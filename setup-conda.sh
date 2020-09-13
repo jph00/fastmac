@@ -4,4 +4,4 @@ conda init bash
 conda activate
 sudo conda config --add channels fastai
 sudo conda install -yc defaults -c conda-forge mamba
-sudo mamba install -yc conda-build anaconda-client
+sudo mamba install -y conda-build anaconda-client
