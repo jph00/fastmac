@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-conda init bash
 . ~/.bash_profile
 conda activate
 sudo conda config --add channels fastai
