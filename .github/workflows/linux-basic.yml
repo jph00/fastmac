@@ -2,7 +2,8 @@ name: linux
 on:
   workflow_dispatch:
 defaults:
-  run: {shell: bash}
+  run:
+    shell: bash
 
 jobs:
   build:
