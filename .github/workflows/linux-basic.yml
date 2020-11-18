@@ -10,5 +10,5 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     runs-on: ubuntu-latest
     steps:
-      - run: gh repo clone $GITHUB_REPOSITORY -- --depth 1
+      - run: gh repo clone $GITHUB_REPOSITORY -- --depth 1 && cd *
       - uses: mxschmitt/action-tmate@master
