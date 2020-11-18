@@ -2,12 +2,13 @@ name: linux-basic
 on:
   workflow_dispatch:
 defaults:
-  run:
-    shell: bash
+  run: {shell: bash}
 
 jobs:
   build:
     env: 
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     runs-on: ubuntu-latest
-    steps: [uses: mxschmitt/action-tmate@master]
+    steps:
+      - run: gh repo clone $GITHUB_REPOSITORY -- --depth 1
+      - uses: mxschmitt/action-tmate@master
