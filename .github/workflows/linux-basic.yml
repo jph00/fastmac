@@ -1,7 +1,9 @@
 name: linux-basic
-on: {workflow_dispatch:}
+on:
+  workflow_dispatch:
 defaults:
-  run: {shell: bash}
+  run:
+    shell: bash
 
 jobs:
   build:
