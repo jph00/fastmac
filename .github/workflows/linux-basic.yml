@@ -1,12 +1,9 @@
-name: linux
-on:
-  workflow_dispatch:
+name: linux-basic
+on: {workflow_dispatch:}
 defaults:
-  run:
-    shell: bash
+  run: {shell: bash}
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-    - uses: mxschmitt/action-tmate@master
+    steps: [uses: mxschmitt/action-tmate@master]
