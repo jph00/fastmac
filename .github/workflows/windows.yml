@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - run: |
-        ls
-        pwd
-        bash -c ls
-        bash -c pwd
+          ls
+          pwd
+          bash -c ls
+          bash -c pwd
