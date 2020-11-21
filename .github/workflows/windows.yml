@@ -16,3 +16,4 @@ jobs:
           bash -c pwd
           touch hello
           ls
+          choco --version
