@@ -1,6 +1,9 @@
 name: windows
 on:
   workflow_dispatch:
+defaults:
+  run:
+    shell: bash
 
 jobs:
   build:
@@ -9,7 +12,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - run: |
-          ls
           pwd
-          bash -c ls
           bash -c pwd
+          touch hello
+          ls
