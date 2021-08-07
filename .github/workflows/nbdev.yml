@@ -13,6 +13,7 @@ jobs:
     - name: clone this branch [fastcore]
       uses: actions/checkout@v2
       with:
+        repository: 'fastai/fastcore'
         path: fastcore_lib
     - name: clone nbdev
       uses: actions/checkout@v2
