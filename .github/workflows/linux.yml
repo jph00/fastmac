@@ -14,6 +14,5 @@ jobs:
         ssh_key: ${{ secrets.SSH_KEY }}
         key_file: id_ecdsa
     - uses: actions/checkout@v2
-    - run: source script-linux.sh
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@master
+#     - run: gh repo clone $GITHUB_REPOSITORY -- --depth 1
+    - uses: lhotari/action-upterm@v1
