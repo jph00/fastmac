@@ -12,7 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Setup upterm session
-      uses: lhotari/action-upterm@v1
-    - run: gh repo clone $GITHUB_REPOSITORY -- --depth 1
-#     - uses: mxschmitt/action-tmate@master
+#     - run: gh repo clone $GITHUB_REPOSITORY -- --depth 1
+    - uses: lhotari/action-upterm@v1
