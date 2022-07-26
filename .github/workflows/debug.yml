@@ -9,7 +9,6 @@ jobs:
           cd
           whoami
           ls -la
-          ls -la .ssh
           mkdir -p .ssh
           touch .ssh/foo
           ls -la .ssh
