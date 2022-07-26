@@ -5,11 +5,11 @@ jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
-    - run: |
-      cd
-      whoami
-      ls -la
-      ls -la .ssh
-      mkdir -p .ssh
-      touch .ssh/foo
-      ls -la .ssh
+      - run: |
+          cd
+          whoami
+          ls -la
+          ls -la .ssh
+          mkdir -p .ssh
+          touch .ssh/foo
+          ls -la .ssh
