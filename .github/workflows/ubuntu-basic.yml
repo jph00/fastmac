@@ -1,4 +1,4 @@
-name: CI
+name: ubuntu-basic
 on:
   workflow_dispatch:
 jobs:
